@@ -1,4 +1,4 @@
-CinemaPeeps.ArtistsRoute = Ember.Route.extend({
+App.ArtistsRoute = Ember.Route.extend({
   model: function() {
     var promises = [this.store.find('artist'), this.store.find('practice')];
     var promise = new Ember.RSVP.Promise(function(resolve, reject){

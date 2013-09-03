@@ -1,3 +1,3 @@
-CinemaPeeps.ArtistsIndexRoute = Ember.Route.extend({
+App.ArtistsIndexRoute = Ember.Route.extend({
 
 });

@@ -1,3 +1,3 @@
-CinemaPeeps.ApplicationController = Ember.ObjectController.extend({
+App.ApplicationController = Ember.ObjectController.extend({
 
 });

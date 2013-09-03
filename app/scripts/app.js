@@ -1,4 +1,4 @@
-var CinemaPeeps = window.CinemaPeeps = Ember.Application.create({
+var App = window.App = Ember.Application.create({
   LOG_TRANSITIONS: true
 });
 

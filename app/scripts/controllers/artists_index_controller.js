@@ -1,4 +1,4 @@
-CinemaPeeps.ArtistsIndexController = Ember.ArrayController.extend({
+App.ArtistsIndexController = Ember.ArrayController.extend({
   needs: ["artists"],
 
   artists: function() {

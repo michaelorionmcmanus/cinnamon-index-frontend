@@ -1,6 +1,6 @@
-CinemaPeeps.Store = DS.Store.extend({});
+App.Store = DS.Store.extend({});
 
-CinemaPeeps.ArtistSerializer = DS.RESTSerializer.extend({
+App.ArtistSerializer = DS.RESTSerializer.extend({
   // First, restructure the top-level so it's organized by type
   serialize: function(artist, options) {
     var json = {

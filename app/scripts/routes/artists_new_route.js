@@ -1,3 +1,3 @@
-CinemaPeeps.ArtistsNewRoute = Ember.Route.extend({
+App.ArtistsNewRoute = Ember.Route.extend({
 
 });

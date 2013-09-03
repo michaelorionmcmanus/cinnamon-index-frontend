@@ -1,4 +1,4 @@
-CinemaPeeps.ArtistsNewController = Ember.ObjectController.extend({
+App.ArtistsNewController = Ember.ObjectController.extend({
   needs: ["artists", "artistsIndex"],
   practices: Ember.A(),
 

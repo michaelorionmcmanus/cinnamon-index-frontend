@@ -1,3 +1,3 @@
-CinemaPeeps.ArtistsController = Ember.ObjectController.extend({
+App.ArtistsController = Ember.ObjectController.extend({
 
 });

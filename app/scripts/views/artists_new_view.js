@@ -1,4 +1,4 @@
-CinemaPeeps.ArtistsNewView = Ember.View.extend({
+App.ArtistsNewView = Ember.View.extend({
   didInsertElement: function() {
     var controller = this.controller;
     this.$('#typeAhead').typeahead({
