@@ -1,0 +1,7 @@
+<h1>Artists</h1>
+<ul>
+  {{#each artist in artists}}
+    <li>{{artist.first_name}} {{artist.last_name}} <a href="#" {{action deleteArtist artist}}>Delete</a></li>
+  {{/each}}
+</ul>
+{{#link-to 'artists.new'}}Create{{/link-to}}
