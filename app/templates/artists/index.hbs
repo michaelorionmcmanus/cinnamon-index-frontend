@@ -1,7 +1,12 @@
-<h1>Artists</h1>
+<h2>Artists</h2>
 <ul>
   {{#each artist in artists}}
-    <li>{{artist.first_name}} {{artist.last_name}} <a href="#" {{action deleteArtist artist}}>Delete</a></li>
+    <li><b>{{artist.first_name}} {{artist.last_name}}</b> <a href="#" {{action deleteArtist artist}}>Delete</a> <br/>
+    {{#if artist.practices}}Practices: [ {{#each practice in artist.practices}}{{practice.name}} {{/each}}]{{/if}}
+    </li>
+
+
+
   {{/each}}
 </ul>
 {{#link-to 'artists.new'}}Create{{/link-to}}

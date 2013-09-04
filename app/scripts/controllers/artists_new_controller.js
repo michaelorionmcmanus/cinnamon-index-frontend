@@ -8,7 +8,7 @@ App.ArtistsNewController = Ember.ObjectController.extend({
     return this.get('controllers.artists.model.practices').map(function(item) {
       return item.get('name');
     });
-  }.property('controllers.artists.model.practices'),
+  }.property('controllers.artists.model.practices.@each'),
 
   addPractice: function(practiceName) {
     var controllerPractices = this.get('practices');
@@ -61,6 +61,7 @@ App.ArtistsNewController = Ember.ObjectController.extend({
 
       artistPromise.then(
         function() {
+          artist.get('store').push('artist', artist.get('data'));
           self.transitionToRoute("artists");
           self.setProperties({ first_name: '', last_name: '', practices: Ember.A()});
          },
